@@ -59,6 +59,7 @@
     "github-uri-https-parser": "^0.1.1-alpha1"
   },
   "dependencies": {
-    "lodash": "^4.17.5"
+    "@pigalle/entities.route": "*",
+    "@pigalle/registries.base": "*"
   }
 }

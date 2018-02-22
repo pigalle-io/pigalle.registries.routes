@@ -1,8 +1,16 @@
 ```javascript
 
-const {githubUriHttpsParser} = require('github-uri-https-parser');
+const {RoutesRegistry} = require('@pigalle/registries.routes')
+const {HttpRouteEntity} = require('@pigalle/entities.route.http')
 
-githubUriHttpsParser('https://github.com/9fv/node-github-uri-https-parser');
-# > {"username": "9fv", "repository": "node-github-uri-https-parser"}
+const products = ['gold coin', 'apple', 'orange', 'strawberry']
+
+const routesRegistry = RoutesRegistry.factory()
+
+const getProducts = HttpRouteEntity.factory('/products', 'GET', () => { return products });
+const getFirstProducts = HttpRouteEntity.factory('/product/1', 'GET', () => { return products[0] });
+
+routesRegistry.add('getProducts', getProducts)
+  .add('getFirstProducts', getFirstProducts)
 
 ```
