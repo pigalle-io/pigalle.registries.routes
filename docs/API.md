@@ -7,30 +7,41 @@ A store for routing of the Pigalle framework.
 ---
 ## API
 
-<a name="module_routes-store"></a>
+<a name="module_routes-registry"></a>
 
-### routes-store
+### routes-registry
 A store for routing of the Pigalle framework.
 
 **Example**  
 ```js
-const {}
+const {RoutesRegistry} = require('@pigalle/registries.routes')
+const {HttpRouteEntity} = require('@pigalle/entities.route.http')
+
+const products = ['gold coin', 'apple', 'orange', 'strawberry']
+
+const routesRegistry = RoutesRegistry.factory()
+
+const getProducts = HttpRouteEntity.factory('/products', 'GET', () => { return products });
+const getFirstProducts = HttpRouteEntity.factory('/product/1', 'GET', () => { return products[0] });
+
+routesRegistry.add('getProducts', getProducts)
+  .add('getFirstProducts', getFirstProducts)
 ```
 
-* [routes-store](#module_routes-store)
-    * [~RoutesStore](#module_routes-store..RoutesStore)
-        * [new RoutesStore(...args)](#new_module_routes-store..RoutesStore_new)
+* [routes-registry](#module_routes-registry)
+    * [~RoutesRegistry](#module_routes-registry..RoutesRegistry)
+        * [new RoutesRegistry(...args)](#new_module_routes-registry..RoutesRegistry_new)
 
-<a name="module_routes-store..RoutesStore"></a>
+<a name="module_routes-registry..RoutesRegistry"></a>
 
-#### routes-store~RoutesStore
+#### routes-registry~RoutesRegistry
 A store class for Pigalle framework routing.
 
-**Kind**: inner class of [<code>routes-store</code>](#module_routes-store)  
+**Kind**: inner class of [<code>routes-registry</code>](#module_routes-registry)  
 **Access**: public  
-<a name="new_module_routes-store..RoutesStore_new"></a>
+<a name="new_module_routes-registry..RoutesRegistry_new"></a>
 
-##### new RoutesStore(...args)
+##### new RoutesRegistry(...args)
 Create a new instance of {RouteMap}.
 
 
@@ -66,6 +77,6 @@ Create a new instance of {RouteMap}.
 
 ***
 
-_Documentation generated on Thu, 22 Feb 2018 17:00:48 GMT_
+_Documentation generated on Thu, 22 Feb 2018 17:54:49 GMT_
 
 **Copyright &copy; 2018 [SAS 9 Février](https://9fevrier.com/)**

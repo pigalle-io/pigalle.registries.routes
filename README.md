@@ -72,10 +72,18 @@ A store for routing of the Pigalle framework.
 
 ```javascript
 
-const {githubUriHttpsParser} = require('github-uri-https-parser');
+const {RoutesRegistry} = require('@pigalle/registries.routes')
+const {HttpRouteEntity} = require('@pigalle/entities.route.http')
 
-githubUriHttpsParser('https://github.com/9fv/node-github-uri-https-parser');
-# > {"username": "9fv", "repository": "node-github-uri-https-parser"}
+const products = ['gold coin', 'apple', 'orange', 'strawberry']
+
+const routesRegistry = RoutesRegistry.factory()
+
+const getProducts = HttpRouteEntity.factory('/products', 'GET', () => { return products });
+const getFirstProducts = HttpRouteEntity.factory('/product/1', 'GET', () => { return products[0] });
+
+routesRegistry.add('getProducts', getProducts)
+  .add('getFirstProducts', getFirstProducts)
 
 ```
 
@@ -136,6 +144,10 @@ Please refer to project's style guidelines and guidelines for submitting patches
 
 ## <a name="credits"> Credits
 
+### Thanks to the developers of the very useful dependencies...
+
+* [@pigalle/entities.route](https://github.com/pigalle-io/pigalle.entities.route) by [pigalle.io](https://github.com/pigalle-io/)
+* [@pigalle/registries.base](https://github.com/pigalle-io/pigalle.registries.base) by [pigalle.io](https://github.com/pigalle-io/)
 
 ## <a name="history"> History
 
