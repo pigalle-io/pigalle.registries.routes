@@ -1,38 +1,38 @@
-[npm-badge]: https://img.shields.io/npm/v/@pigalle/routes.store.svg
-[npm-badge-url]: https://www.npmjs.com/package/@pigalle/routes.store
-[npm-downloads-badge]: https://img.shields.io/npm/dt/@pigalle/routes.store.svg
-[npm-downloads-url]: https://npmjs.org/package/@pigalle/routes.store
-[travis-badge]: https://img.shields.io/travis/pigalle-io/pigalle.routes.store/master.svg?label=TravisCI
-[travis-badge-url]: https://travis-ci.org/pigalle-io/pigalle.routes.store
-[circle-badge]: https://circleci.com/gh/pigalle-io/pigalle.routes.store/tree/master.svg?style=svg&circle-token=
-[circle-badge-url]: https://circleci.com/gh/pigalle-io/pigalle.routes.store/tree/master
-[coveralls-badge]: https://coveralls.io/repos/github/pigalle-io/pigalle.routes.store/badge.svg?branch=master
-[coveralls-badge-url]: https://coveralls.io/github/pigalle-io/pigalle.routes.store?branch=master
-[codeclimate-badge]: https://img.shields.io/codeclimate/github/pigalle-io/pigalle.routes.store.svg
-[codeclimate-badge-url]: https://codeclimate.com/github/pigalle-io/pigalle.routes.store
-[ember-observer-badge]: http://emberobserver.com/badges/pigalle.routes.store.svg
-[ember-observer-badge-url]: http://emberobserver.com/addons/pigalle.routes.store
-[license-badge]: https://img.shields.io/npm/l/@pigalle/routes.store.svg
+[npm-badge]: https://img.shields.io/npm/v/{{{package.name}}}.svg
+[npm-badge-url]: https://www.npmjs.com/package/{{{package.name}}}
+[npm-downloads-badge]: https://img.shields.io/npm/dt/{{{package.name}}}.svg
+[npm-downloads-url]: https://npmjs.org/package/{{{package.name}}}
+[travis-badge]: https://img.shields.io/travis/{{{github.username}}}/{{{github.repository}}}/{{{github.branch}}}.svg?label=TravisCI
+[travis-badge-url]: https://travis-ci.org/{{{github.username}}}/{{{github.repository}}}
+[circle-badge]: https://circleci.com/gh/{{{github.username}}}/{{{github.repository}}}/tree/{{{github.branch}}}.svg?style=svg&circle-token={{{CIRCLE_TOKEN}}}
+[circle-badge-url]: https://circleci.com/gh/{{{github.username}}}/{{{github.repository}}}/tree/{{{github.branch}}}
+[coveralls-badge]: https://coveralls.io/repos/github/{{{github.username}}}/{{{github.repository}}}/badge.svg?branch={{{github.branch}}}
+[coveralls-badge-url]: https://coveralls.io/github/{{{github.username}}}/{{{github.repository}}}?branch={{{github.branch}}}
+[codeclimate-badge]: https://img.shields.io/codeclimate/github/{{{github.username}}}/{{{github.repository}}}.svg
+[codeclimate-badge-url]: https://codeclimate.com/github/{{{github.username}}}/{{{github.repository}}}
+[ember-observer-badge]: http://emberobserver.com/badges/{{{github.repository}}}.svg
+[ember-observer-badge-url]: http://emberobserver.com/addons/{{{github.repository}}}
+[license-badge]: https://img.shields.io/npm/l/{{{package.name}}}.svg
 [license-badge-url]: LICENSE.md
-[dependencies-badge]: https://img.shields.io/david/pigalle-io/pigalle.routes.store.svg
-[dependencies-badge-url]: https://david-dm.org/pigalle-io/pigalle.routes.store
-[devDependencies-badge]: https://img.shields.io/david/dev/pigalle-io/pigalle.routes.store.svg
-[devDependencies-badge-url]: https://david-dm.org/pigalle-io/pigalle.routes.store#info=devDependencies
-[greenkeeper-badge]: https://badges.greenkeeper.io/pigalle-io/pigalle.routes.store.svg
+[dependencies-badge]: https://img.shields.io/david/{{{github.username}}}/{{{github.repository}}}.svg
+[dependencies-badge-url]: https://david-dm.org/{{{github.username}}}/{{{github.repository}}}
+[devDependencies-badge]: https://img.shields.io/david/dev/{{{github.username}}}/{{{github.repository}}}.svg
+[devDependencies-badge-url]: https://david-dm.org/{{{github.username}}}/{{{github.repository}}}#info=devDependencies
+[greenkeeper-badge]: https://badges.greenkeeper.io/{{{github.username}}}/{{{github.repository}}}.svg
 [greenkeeper-badge-url]: https://greenkeeper.io/
 [standardjs-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [standardjs-badge-url]: https://standardjs.com
 
 
-# pigalle.routes.store
+# {{{github.repository}}}
 
-A store for routing of the Pigalle framework.
+{{{package.description}}}
 
-
+{{{#workInProgress}}}
 ---
 &#x1F34E; <span style="color:red">**__Warning !__ Work in progress...**</span>
 ---
-
+{{{/workInProgress}}}
 
 [![JavaScript Style Guide][standardjs-badge]][standardjs-badge-url]
 [![Latest NPM release][npm-badge]][npm-badge-url]
@@ -66,22 +66,15 @@ A store for routing of the Pigalle framework.
 
 ## <a name="synopsis"> Synopsis
 
-A store for routing of the Pigalle framework.
+{{{package.description}}}
 
 ## <a name="usage"> Usage
 
-```javascript
-
-const {githubUriHttpsParser} = require('github-uri-https-parser');
-
-githubUriHttpsParser('https://github.com/9fv/node-github-uri-https-parser');
-# > {"username": "9fv", "repository": "node-github-uri-https-parser"}
-
-```
+{{> usage }}
 
 ## <a name="installation"> Installation
 
-    npm install @pigalle/routes.store
+    npm install {{{package.name}}}
 
 ## <a name="api-reference"> API Reference
 
@@ -112,7 +105,7 @@ or:
 
 ### <a name="compatibility_node"> Node
 
-Tested using [Node 9.5.0](https://nodejs.org/dist/v9.5.0/docs/api/).
+Tested using [Node {{{ node.version }}}](https://nodejs.org/dist/v{{{ node.version }}}/docs/api/).
 
 ### <a name="compatibility_browser"> Browser
 
@@ -120,7 +113,7 @@ Untested at this time.
 
 ## <a name="issues"> Issues
 
-Feel free to [submit issues](https://github.com/pigalle-io/pigalle.routes.store/issues) and enhancement requests.
+Feel free to [submit issues]({{{ package.bugs.url }}}) and enhancement requests.
 
 ## <a name="contributing"> Contributing
 
@@ -136,6 +129,7 @@ Please refer to project's style guidelines and guidelines for submitting patches
 
 ## <a name="credits"> Credits
 
+{{> credits }}
 
 ## <a name="history"> History
 
