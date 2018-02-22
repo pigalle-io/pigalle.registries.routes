@@ -1,8 +1,8 @@
 {
-  "name": "@pigalle/routes.store",
+  "name": "@pigalle/registries.routes",
   "version": "0.1.0",
   "description": "A store for routing of the Pigalle framework.",
-  "main": "lib/index.js",
+  "main": "lib/routes-registry.js",
   "scripts": {
     "test": "nyc mocha",
     "lint": "node ./node_modules/standard/bin/cmd.js --fix",

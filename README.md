@@ -1,7 +1,7 @@
-[npm-badge]: https://img.shields.io/npm/v/@pigalle/routes.store.svg
-[npm-badge-url]: https://www.npmjs.com/package/@pigalle/routes.store
-[npm-downloads-badge]: https://img.shields.io/npm/dt/@pigalle/routes.store.svg
-[npm-downloads-url]: https://npmjs.org/package/@pigalle/routes.store
+[npm-badge]: https://img.shields.io/npm/v/@pigalle/registries.routes.svg
+[npm-badge-url]: https://www.npmjs.com/package/@pigalle/registries.routes
+[npm-downloads-badge]: https://img.shields.io/npm/dt/@pigalle/registries.routes.svg
+[npm-downloads-url]: https://npmjs.org/package/@pigalle/registries.routes
 [travis-badge]: https://img.shields.io/travis/pigalle-io/pigalle.routes.store/master.svg?label=TravisCI
 [travis-badge-url]: https://travis-ci.org/pigalle-io/pigalle.routes.store
 [circle-badge]: https://circleci.com/gh/pigalle-io/pigalle.routes.store/tree/master.svg?style=svg&circle-token=
@@ -12,7 +12,7 @@
 [codeclimate-badge-url]: https://codeclimate.com/github/pigalle-io/pigalle.routes.store
 [ember-observer-badge]: http://emberobserver.com/badges/pigalle.routes.store.svg
 [ember-observer-badge-url]: http://emberobserver.com/addons/pigalle.routes.store
-[license-badge]: https://img.shields.io/npm/l/@pigalle/routes.store.svg
+[license-badge]: https://img.shields.io/npm/l/@pigalle/registries.routes.svg
 [license-badge-url]: LICENSE.md
 [dependencies-badge]: https://img.shields.io/david/pigalle-io/pigalle.routes.store.svg
 [dependencies-badge-url]: https://david-dm.org/pigalle-io/pigalle.routes.store
@@ -81,7 +81,7 @@ githubUriHttpsParser('https://github.com/9fv/node-github-uri-https-parser');
 
 ## <a name="installation"> Installation
 
-    npm install @pigalle/routes.store
+    npm install @pigalle/registries.routes
 
 ## <a name="api-reference"> API Reference
 
